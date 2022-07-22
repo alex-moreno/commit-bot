@@ -6,4 +6,10 @@ jobs:
     docker:
      - image: cimg/base:2022.05
     steps:
-        - run: echo "Say hello to YAML!"
+        #- run: echo "Say hello to YAML!"
+      - run:
+          name: Clone frontend repository
+          command: >-
+            GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_fingerprint'
+            git clone git@github.com:alex-moreno/commit-bot.git 
+
