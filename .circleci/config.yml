@@ -12,5 +12,5 @@ jobs:
           command: >-
             GIT_SSH_COMMAND=
             #git clone git@github.com:alex-moreno/commit-bot.git 
-	     git clone https://github.com/alex-moreno/commit-bot.git
+            git clone https://github.com/alex-moreno/commit-bot.git
 
